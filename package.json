@@ -1,0 +1,6 @@
+{
+  "name": "afom-labs-wall-client",
+  "version": "1.0.0",
+  "description": "AFOM Labs - Wall Client - Supports require.js, browserify and plain js",
+  "main": "labs-wall-client.js"
+}
