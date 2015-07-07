@@ -11,8 +11,13 @@
 
 })(window, function(io) {
 
+  // Connect with the friend of mine wall server
   var socket = io('http://wall.afriendofmine.nl');
   
+  // Tell the server this is a device
+  socket.emit('device');
+
+  // Listen for incomming url to navigate to
   socket.on('url', function(url) {
     window.location.assign(url);
   });
