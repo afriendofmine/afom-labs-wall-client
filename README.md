@@ -1,6 +1,6 @@
 # AFOM Labs - Wall Client
 
-Connect with the AFOM Labs Wall Server to control the devices wall.<br>
+Connect with the AFOM Labs Wall Server to be controled as a device on the devices wall.<br>
 It supports require.js, browserify and plain js.
 
 
@@ -8,7 +8,7 @@ It supports require.js, browserify and plain js.
 
 
 #### With require.js
-Define socket.io-client in require.js (will be described soon)
+Define socket.io-client in require.js and require `afom-labs-wall-client`(will be described soon)
 ```javascript
 
 ```
@@ -17,22 +17,21 @@ Define socket.io-client in require.js (will be described soon)
 #### With browserify
 Make sure `afom-labs-wall-client` and `socket.io-client` are added to your project
 ```javascript
-npm install --save afom-labs-wall-client
 npm install --save socket.io-client
+npm install --save afom-labs-wall-client
 ```
 
 In your file you only have to add the following code
 ```
 require('afom-labs-wall-client');
-
 ```
 
 
 #### With reguar js
-Make sure `socket.io-client` is included before `labs-wall-client.js`
+Make sure `socket.io-client` is included _before_ `labs-wall-client.js`
 ```javascript
 <script>Other Code</script>
 <script src="https://cdn.socket.io/socket.io-1.3.5.js"></script>
-<script src="labs-wall-client.js"></script>
+<script src="http://wall.afriendofmine.nl/js/afom-labs-wall-client.js"></script>
 <script>Other Code</script>
 ```
