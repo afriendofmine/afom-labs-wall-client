@@ -1,8 +1,10 @@
 {
   "name": "afom-labs-wall-client",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "AFOM Labs - Wall Client - Supports require.js, browserify and plain js",
   "main": "afom-labs-wall-client.js",
+  "author": "afriendofmine <labs@afriendofmine.nl>",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/afriendofmine/labs-wall-client"
